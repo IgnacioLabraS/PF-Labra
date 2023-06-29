@@ -113,7 +113,11 @@
 							  </div>
 						  </div>
 					</div>
-					
+				</div>
+				<div class="row">
+					<div class="d-flex justify-content-center my-5">
+						<a href="./pages/proyectos.html" class="btn btn-primary">Ver más proyectos</a>
+					</div>
 				</div>
 		 	</section>
 			 <div class="container-fluid titulo">
@@ -121,77 +125,81 @@
 					<h2 class="text-center my-5">Sobre mi</h2>
 				</div>
 			</div>
-		 	<section id="sobre_mi"> 
-				<div class="contenedor">
-					<div class="parrafo">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cumque dolores sapiente eius autem voluptatibus. Quasi, perspiciatis delectus alias atque quidem exercitationem, dolores temporibus voluptatem ratione eaque eos quod. Explicabo, laborum! Sit nostrum ducimus, consectetur sint quasi eos cumque minus.</p>
+		 	<section id="sobre_mi" class="container"> 
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 parrafo">
+						<p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cumque dolores sapiente eius autem voluptatibus. Quasi, perspiciatis delectus alias atque quidem exercitationem, dolores temporibus voluptatem ratione eaque eos quod. Explicabo, laborum! Sit nostrum ducimus, consectetur sint quasi eos cumque minus.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cumque dolores sapiente eius autem voluptatibus. Quasi, perspiciatis delectus alias atque quidem exercitationem, dolores temporibus voluptatem ratione eaque eos quod. Explicabo, laborum! Sit nostrum ducimus, consectetur sint quasi eos cumque minus.</p>
 					</div>
-					<div class="skills">
-						<div class="barra">
-							<div class="progreso barra-1">
-								<span class="texto-barra">HTML</span>
-							</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 skills">
+						<div class="progress my-3" role="progressbar"  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar" style="width: 90%"><span class="d-flex justify-content-start px-2 fw-bold">HTML</span></div>
+						  </div>
+						<div class="progress my-3" role="progressbar"  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar" style="width: 80%"><span class="d-flex justify-content-start px-2 fw-bold">CSS</span></div>
 						</div>
-						<div class="barra">
-							<div class="progreso barra-2">
-								<span class="texto-barra">CSS</span>
-							</div>
-						</div>
-						<div class="barra">
-							<div class="progreso barra-3">
-								<span class="texto-barra">JS</span>
-							</div>
+						<div class="progress my-3" role="progressbar"  aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar" style="width: 35%"><span class="d-flex justify-content-start px-2 fw-bold">JavaScript</span></div>
 						</div>
 					</div>
-					<div class="ver-mas">
-						<a href="./pages/sobre_mi.html">Ver más</a>
+				</div>
+				<div class="row">
+					<div class="d-flex justify-content-center my-5">
+						<a href="./pages/sobre_mi.html" class="btn btn-primary">Ver más</a>
 					</div>
 				</div>
 		 	</section>
-			 <div class="container-fluid titulo">
-				<div class="row">
-					<h2 class="text-center my-5">Contacto</h2>
-				</div>
-			</div>
-			<section id="contacto">
-				<div class="opacidad">
-					<div class="contenedor">
-						<div class="formulario">
-							<form action="" method="post">
-							<div class="formulario-padding">
-							<label for="nombre">Ingresa tu nombre:</label>
-							<input type="text" name="nombre" placeholder="Nombre y apellido" class="formulario-input">
-							</div>
-							<div class="formulario-padding">
-							<label for="email">Ingresa tu Email:</label>
-							<input type="text" name="email" placeholder="ejemplo123@correo.com"  class="formulario-input">
-							</div>
-							<div class="formulario-padding">
-							<label for="asunto">Asunto:</label>
-							<input type="text" name="asunto" placeholder="Asunto"  class="formulario-input">
-							</div>
-							<div class="formulario-padding">
-							<label for="mensaje">Mensaje :</label>
-							<textarea name="mensaje" placeholder="Tú mensaje"  class="formulario-input-msj"></textarea>
-							</div>
-							<input type="submit" name="Enviar" class="enviar">
-							</form>
+			<section id="contacto" class="container-fluid">
+					<div class="row">
+						<h2 class="text-center my-5">Contacto</h2>
+					</div>
+					<div class="row">
+						<div class="formulario col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+							<form method="post">
+								<!-- Nombre -->
+								<div class="form-outline mb-4">
+									<label class="form-label" for="Nombre">Nombre</label>
+							    	<input type="text" id="Nombre" class="form-control" />
+								</div>
+								<!-- Asunto -->
+								<div class="form-outline mb-4">
+									<label class="form-label" for="Asunto">Asunto</label>
+									<input type="text" id="Asunto" class="form-control" />
+							  	</div>
+								<!-- Email -->
+								<div class="form-outline mb-4">
+							   		 <label class="form-label" for="Email">Correo Electronico</label>
+							   		 <input type="email" id="Email" class="form-control" />
+								</div>
+								<!-- Mensaje -->
+								<div class="form-outline mb-4">
+									<label class="form-label" for="Mensaje">Mensaje</label>
+							   		<textarea class="form-control" id="Mensaje" rows="4"></textarea>
+								</div>
+								<!-- Botón -->
+								<button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+						  </form>
 						</div>
 					</div>
-				</div>
+
 			</section>
 	</main>
-	<footer class="container-fluid">
-		<div id="row logo">
-			<div class="col-2">
-			<img src="images/logo-header.png" alt="logo de mi portafolio">
-			</div>
-			<div class="col-10">
-				<img src="images/logo-header.png" alt="logo de mi portafolio">
+	<footer>
+		<div class="container-fluid">
+			<div class="row logo">
+				<div class="col-sm-12 col-md-8 col-lg-8 col-xl-9 d-flex align-items-center">
+					<img src="images/logo-header.png" alt="logo de mi portafolio" class="img-responsive">
 				</div>
-		</div>
-		<div id="row copyright">
-			<p> 2023 &copy; Ignacio Labra.</p>
+				<div class="redes col-sm-12 col-md-4 col-lg-4 col-xl-3">
+						<ul class="d-flex justify-content-evenly">
+							<li><a href="#"><i class="bi bi-github"></i></a></li>
+							<li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+							<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+						</ul>
+				</div>
+			</div>
+			<div class="row copyright">
+				<p class="text-center text-white my-3"> 2023 &copy; Ignacio Labra.</p>
+			</div>
 		</div>
 	</footer>
 	<script src="./js/bootstrap.js"></script> <!--Script traido local-->

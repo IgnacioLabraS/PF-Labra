@@ -1,5 +1,6 @@
 /* fuente */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 /* Reset */
 *{
     margin: 0;
@@ -340,4 +341,35 @@ header> .bg-primary{
 .ProyectoCarta> .card> .card-img-overlay{
     border-radius: 0px;
     --bs-bg-opacity: 0.8;
+}
+.skills> .progress{
+    --bs-progress-height: 3rem;
+    --bs-progress-bar-bg: #1ee984;
+    border: 2px solid rgb(21, 22, 31);
+    border-radius: 0;
+}
+.skills> .progress> span{
+    text-shadow: 1px black;
+}
+footer{
+    background-color: rgb(21, 22, 31);
+}
+footer .logo{
+    padding: 15px;
+}
+.redes> ul{
+    margin-bottom: 0;
+}
+.redes ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 2.5em;
+}
+.redes ul li a:hover{
+    text-decoration: none;
+    color:#1ee984;
+}
+footer p{
+    margin-bottom:0 ;
+    font-size: 0.8rem;
 }
