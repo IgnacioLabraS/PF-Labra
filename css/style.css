@@ -137,3 +137,21 @@ footer p{
     margin-bottom:0 ;
     font-size: 0.8rem;
 }
+/* ajustes mobile */
+@media (max-width: 576px) {
+    #presentacion img{
+        width: 60%;
+    }
+    .logo> .logo_footer{
+        display: flex ;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    .bi-list{
+        color:#1ee984;
+        font-size: 2rem;
+    }
+    .nav-item{
+        padding: 15px 0;
+    }
+ }
