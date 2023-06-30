@@ -37,44 +37,64 @@
 		  </nav> <!--Termina nav-->
 	</header> <!--Termina header-->
 		<main>
-			<section id="sobre_mi"> 
-				<h2 class="titulo">Sobre mi</h2>
-				<div class="contenedor">
-					<div class="parrafo">
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cumque dolores sapiente eius autem voluptatibus. Quasi, perspiciatis delectus alias atque quidem exercitationem, dolores temporibus voluptatem ratione eaque eos quod. Explicabo, laborum! Sit nostrum ducimus, consectetur sint quasi eos cumque minus.<br>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cumque dolores sapiente eius autem voluptatibus. Quasi, perspiciatis delectus alias atque quidem exercitationem, dolores temporibus voluptatem ratione eaque eos quod. Explicabo, laborum! Sit nostrum ducimus, consectetur sint quasi eos cumque minus.
-						</p>
+			<div class="container-fluid titulo">
+				<div class="row">
+					<h2 class="text-center my-5 fw-bold">Sobre mi</h2>
+				</div>
+			</div>
+			<section id="sobre_mi" class="container"> 
+				<div class="row">
+					<div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 parrafo">
+						<p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cumque dolores sapiente eius autem voluptatibus. Quasi, perspiciatis delectus alias atque quidem exercitationem, dolores temporibus voluptatem ratione eaque eos quod. Explicabo, laborum! Sit nostrum ducimus, consectetur sint quasi eos cumque minus.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cumque dolores sapiente eius autem voluptatibus. Quasi, perspiciatis delectus alias atque quidem exercitationem, dolores temporibus voluptatem ratione eaque eos quod. Explicabo, laborum! Sit nostrum ducimus, consectetur sint quasi eos cumque minus.</p>
 					</div>
-					<div class="foto">
-						<img src="../images/logo-pre.png" alt="foto mia">
-					</div>
-					<div class="competencias">
+					<div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 PerfilRed">
+						<div class="FotoPerfil d-flex justify-content-center">
+						<img src="../images/foto-falsa.jpg" alt="Foto de perfil" class="img-fluid">
+					    </div>
+						<ul class="d-flex justify-content-evenly my-3">
+							<li><a href="#"><i class="bi bi-github"></i></a></li>
+							<li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+							<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+						</ul>
+					</div>	
+				</div>
+				<div class="row">
+					<h2 class="text-center my-5 fw-bold">Competencias</h2>
+				</div>
+				<div class="row mb-5">
+					<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 competencias d-flex flex-column align-items-center">
 						<div class="competencia_imagen">
 							<img src="../images/css.png" alt="imagen de un proyecto">
-							<h3>Diseño</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 						</div>
+						<h4 class="fw-semibold my-3">Diseño</h4>
+						<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-sm-12 col-md-3 col-lg 3 col-xl-3 competencias d-flex flex-column align-items-center">
 						<div class="competencia_imagen">
 							<img src="../images/html5.png" alt="imagen de un proyecto">
-							<h3>Desarrollo</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 						</div>
+						<h4 class="fw-semibold my-3">Desarrollo</h4>
+						<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					</div>
-					<div class="skills">
-						<div class="barra">
-							<div class="progreso barra-1">
-								<span class="texto-barra">HTML</span>
-							</div>
+					<div class="col-sm-12 col-md-3 col-lg 3 col-xl-3 competencias d-flex flex-column align-items-center">
+						<div class="competencia_imagen">
+							<img src="../images/css.png" alt="imagen de un proyecto">
 						</div>
-						<div class="barra">
-							<div class="progreso barra-2">
-								<span class="texto-barra">CSS</span>
-							</div>
+						<h4 class="fw-semibold my-3">Funcionamiento</h4>
+						<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 skills">
+						<div class="progress my-3" role="progressbar"  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar" style="width: 90%"><span class="d-flex justify-content-start px-2 fw-bold">HTML</span></div>
+						  </div>
+						<div class="progress my-3" role="progressbar"  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar" style="width: 80%"><span class="d-flex justify-content-start px-2 fw-bold">CSS</span></div>
 						</div>
-						<div class="barra">
-							<div class="progreso barra-3">
-								<span class="texto-barra">JS</span>
-							</div>
+						<div class="progress my-3" role="progressbar"  aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar" style="width: 35%"><span class="d-flex justify-content-start px-2 fw-bold">JavaScript</span></div>
+						</div>
+						<div class="progress my-3" role="progressbar"  aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar" style="width: 55%"><span class="d-flex justify-content-start px-2 fw-bold">PHP</span></div>
 						</div>
 					</div>
 				</div>

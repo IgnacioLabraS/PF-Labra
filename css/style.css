@@ -68,6 +68,9 @@ header> .bg-primary{
 .skills> .progress> span{
     text-shadow: 1px black;
 }
+.FotoPerfil img{
+    width: 50%;
+}
 #contacto{
     background-image: url(../images/contacto.jpg);
     background-size: cover;
@@ -102,15 +105,21 @@ footer{
 footer .logo{
     padding: 15px;
 }
-.redes> ul{
+.redes> ul, .PerfilRed> ul{
+    list-style: none;
     margin-bottom: 0;
+}
+.PerfilRed ul li a{
+    text-decoration: none;
+    color: #23232a;
+    font-size: 2.5em;
 }
 .redes ul li a{
     text-decoration: none;
     color:white;
     font-size: 2.5em;
 }
-.redes ul li a:hover{
+.redes ul li a:hover, .PerfilRed ul li a:hover{
     text-decoration: none;
     color:#1ee984;
 }
