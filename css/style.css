@@ -81,13 +81,13 @@ header> .bg-primary{
 #contacto> .bg-black{
     --bs-bg-opacity: 0.8;
 }
-#contacto .btn-primary, #sobre_mi .btn-primary, #proyecto .btn-primary {
+#contacto .btn-primary, #sobre_mi .btn-primary, #proyecto .btn-primary, .ver-mas> .btn-primary {
     border-radius: 0;
     background-color: #1ee984;
     border: 2px solid #1ee984;
     color :#23232a;
 }
-#contacto .btn-primary:hover, #sobre_mi .btn-primary:hover, #proyecto .btn-primary:hover{
+#contacto .btn-primary:hover, #sobre_mi .btn-primary:hover, #proyecto .btn-primary:hover, .ver-mas> .btn-primary:hover{
     border-radius: 0;
     background-color: #23232a;
     border: 2px solid #1ee984;
@@ -98,6 +98,16 @@ header> .bg-primary{
 }
 .form-control:focus{
     border: 2px solid #1ee984!important;
+}
+.detalle_parrafo> ul{
+    list-style: none;
+    padding-left: 0;
+}
+.detalle_parrafo ul li a> .text-bg-primary{
+    background-color: #23232a !important;
+}
+.detalle_parrafo ul li a:hover .text-bg-primary{
+    background-color: #1ee984 !important;
 }
 footer{
     background-color: #23232a;
