@@ -1,0 +1,45 @@
+/*sección proyectos*/
+Section#proyecto{
+    div.row{
+        div.ProyectoCarta{
+            padding-left: 0;
+            padding-right: 0;
+            div.proyecto_imagen{
+                position: relative;
+                border: 1px solid $colorPrimario;
+                @include mobile{
+                    margin: 20px;
+                }
+                div.overlay{
+                    background-color: #040414df ;
+                    color: white;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 0;
+                    overflow: hidden;
+                    transition: .6s ease;
+                    @include flexbox(column, nowrap,space-evenly, center);
+                    a.btn-primary{
+                    @include boton();
+                        &:hover{
+                            @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                        }
+                    }
+                }
+                &:hover .overlay{
+                    height: 100%;
+                }
+            }
+        }
+        div{
+            a.btn-primary{
+                @include boton();
+                    &:hover{
+                        @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                    }
+                }
+        }
+    }
+}

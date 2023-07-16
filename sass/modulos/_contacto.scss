@@ -1,0 +1,29 @@
+/*Sección Contacto*/
+#contacto{
+    background-image: url(../images/contacto.jpg);
+    @include BackImagen();
+    div.bg-black{
+        --bs-bg-opacity: 0.8;
+        .formulario{
+            form{
+                div{
+                    .form-control{
+                        border-radius: 0 !important;
+                        &:focus{
+                            border: 2px solid $colorSecundario !important;
+                        }
+                    }
+                }
+                div{
+                    button.btn-primary{
+                        @include boton();
+                            &:hover{
+                                @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                            }
+                        }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/*Página sobre mi*/
+section#sobre_mi{
+    div.row{
+        div.PerfilRed{
+            div.FotoPerfil{
+                img{
+                    width: 50%;
+                }
+            }
+            ul{
+                list-style: none;
+                margin-bottom: 0;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $colorPrimario;
+                        font-size: 2.5em;
+                        &:hover{
+                            text-decoration: none;
+                            color: $colorSecundario;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.row{
+        div.competencias{
+            margin: 30px 0;
+            div.competencia_imagen{
+                @include flexbox(row,nowrap,center,center);
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

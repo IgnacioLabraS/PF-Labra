@@ -1,157 +1,334 @@
-/* fuente */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,400;1,700&display=swap');
+@charset "UTF-8";
+/* Variables*/ /* Importacion de fuentes e iconos*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700;900&family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,400;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-/* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+/*reset y cambios globales*/
+* {
+  margin: 0;
+  padding: 0;
 }
-header> .bg-primary{
-    background-color: #23232a !important;
+
+h2, h3, h4, h5 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
 }
-.nav-link{
-    color: white!important;
-    border-bottom: 3px solid transparent;
+
+p, span {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
-.nav-link:hover{
-    color: #1ee984;
-    border-bottom: 3px solid #1ee984;
+
+/*Cambio bootstrap*/
+.navbar-nav .nav-item {
+  padding: 0 30px;
 }
-.nav-item{
-    padding: 0 30px;
-}
-#presentacion{
-    background-image: url(../images/presentacion.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-}
-#presentacion> .bg-black{
-    --bs-bg-opacity: 0.7;
-}
-#presentacion img{
-    width: 30%;
-}
-#proyecto> .row> .ProyectoCarta{
-    padding-left: 0;
-    padding-right: 0;
-}
-.proyecto_imagen{
-    position: relative;
-    border: 1px solid #23232a;
-}
-.overlay{
-    background-color: #1ee984;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    overflow: hidden;
-    transition: .6s ease;
+@media screen and (max-width: 576px) {
+  .navbar-nav .nav-item {
+    padding: 15px 20px;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
+  }
 }
-.proyecto_imagen:hover .overlay{
-    height: 100%;
+@media screen and (max-width: 992px) {
+  .navbar-nav .nav-item {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.skills> .progress{
-    --bs-progress-height: 3rem;
-    --bs-progress-bar-bg: #1ee984;
-    border: 2px solid #23232a;
-    border-radius: 0;
+.navbar-nav .nav-item a.nav-link {
+  color: white !important;
+  border-bottom: 3px solid #040414;
 }
-.skills> .progress> span{
-    text-shadow: 1px black;
+.navbar-nav .nav-item a.nav-link:hover {
+  color: #1ee984 !important;
+  border-bottom: 3px solid #1ee984;
 }
-.FotoPerfil img{
-    width: 50%;
+
+@media screen and (max-width: 576px) {
+  .bi-list {
+    color: #1ee984;
+    font-size: 2rem;
+  }
 }
-#contacto{
-    background-image: url(../images/contacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
+@media screen and (max-width: 992px) {
+  .bi-list {
+    color: #1ee984;
+    font-size: 2rem;
+  }
 }
-#contacto> .bg-black{
-    --bs-bg-opacity: 0.8;
+
+header nav.navbar.bg-primary {
+  background-color: #040414 !important;
 }
-#contacto .btn-primary, #sobre_mi .btn-primary, #proyecto .btn-primary, .ver-mas> .btn-primary {
-    border-radius: 0;
-    background-color: #1ee984;
-    border: 2px solid #1ee984;
-    color :#23232a;
+@media screen and (max-width: 576px) {
+  header nav.navbar.bg-primary div.containerfluid .navbar-toggler .bi-list {
+    color: #1ee984;
+    font-size: 2rem;
+  }
 }
-#contacto .btn-primary:hover, #sobre_mi .btn-primary:hover, #proyecto .btn-primary:hover, .ver-mas> .btn-primary:hover{
-    border-radius: 0;
-    background-color: #23232a;
-    border: 2px solid #1ee984;
-    color :#1ee984;
+header nav.navbar.bg-primary div.containerfluid div.collapse.navbar-collapse ul.navbar-nav li.nav-item {
+  padding: 0 30px;
 }
-.form-control {
-    border-radius: 0 !important;
+header nav.navbar.bg-primary div.containerfluid div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+  color: white !important;
+  border-bottom: 3px solid #040414;
 }
-.form-control:focus{
-    border: 2px solid #1ee984!important;
+header nav.navbar.bg-primary div.containerfluid div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #1ee984;
+  border-bottom: 3px solid #1ee984;
 }
-.detalle_parrafo> ul{
-    list-style: none;
-    padding-left: 0;
+
+/*Sección presentación*/
+#presentacion {
+  background-image: url(../images/presentacion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
 }
-.detalle_parrafo ul li a> .text-bg-primary{
-    background-color: #23232a !important;
+#presentacion .bg-black {
+  --bs-bg-opacity: 0.7;
 }
-.detalle_parrafo ul li a:hover .text-bg-primary{
-    background-color: #1ee984 !important;
+#presentacion .bg-black img {
+  width: 30%;
 }
-footer{
-    background-color: #23232a;
+@media screen and (max-width: 576px) {
+  #presentacion .bg-black img {
+    width: 60%;
+  }
 }
-footer .logo{
-    padding: 15px;
+#presentacion .bg-black h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: 3rem;
 }
-.redes> ul, .PerfilRed> ul{
-    list-style: none;
-    margin-bottom: 0;
+@media screen and (max-width: 576px) {
+  #presentacion .bg-black h1 {
+    font-size: 2rem;
+  }
 }
-.PerfilRed ul li a{
-    text-decoration: none;
-    color: #23232a;
-    font-size: 2.5em;
+#presentacion .bg-black p {
+  font-family: "Montserrat", sans-serif;
 }
-.redes ul li a{
-    text-decoration: none;
-    color:white;
-    font-size: 2.5em;
+
+/*sección proyectos*/
+Section#proyecto div.row div.ProyectoCarta {
+  padding-left: 0;
+  padding-right: 0;
 }
-.redes ul li a:hover, .PerfilRed ul li a:hover{
-    text-decoration: none;
-    color:#1ee984;
+Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen {
+  position: relative;
+  border: 1px solid #040414;
 }
-footer p{
-    margin-bottom:0 ;
-    font-size: 0.8rem;
+@media screen and (max-width: 576px) {
+  Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen {
+    margin: 20px;
+  }
 }
-/* ajustes mobile */
-@media (max-width: 576px) {
-    #presentacion img{
-        width: 60%;
-    }
-    .logo> .logo_footer{
-        display: flex ;
-        justify-content: center;
-        padding: 20px 0px;
-    }
-    .bi-list{
-        color:#1ee984;
-        font-size: 2rem;
-    }
-    .nav-item{
-        padding: 15px 0;
-    }
- }
+Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen div.overlay {
+  background-color: rgba(4, 4, 20, 0.8745098039);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen div.overlay a.btn-primary {
+  border-radius: 0;
+  background-color: #1ee984;
+  border: 2px solid #040414;
+  color: #040414;
+}
+Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen div.overlay a.btn-primary:hover {
+  border-radius: 0;
+  background-color: #040414;
+  border: 2px solid #040414;
+  color: #1ee984;
+}
+Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen:hover .overlay {
+  height: 100%;
+}
+Section#proyecto div.row div a.btn-primary {
+  border-radius: 0;
+  background-color: #1ee984;
+  border: 2px solid #040414;
+  color: #040414;
+}
+Section#proyecto div.row div a.btn-primary:hover {
+  border-radius: 0;
+  background-color: #040414;
+  border: 2px solid #040414;
+  color: #1ee984;
+}
+
+/*Sección sobre mi*/
+#sobre_mi .row .skills .progress {
+  --bs-progress-height: 3rem;
+  --bs-progress-bar-bg: #1ee984;
+  border: 2px solid #040414;
+  border-radius: 0;
+}
+#sobre_mi .row .skills .progress .progress-bar span {
+  color: #040414;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+#sobre_mi .row div a.btn-primary {
+  border-radius: 0;
+  background-color: #1ee984;
+  border: 2px solid #040414;
+  color: #040414;
+}
+#sobre_mi .row div a.btn-primary:hover {
+  border-radius: 0;
+  background-color: #040414;
+  border: 2px solid #040414;
+  color: #1ee984;
+}
+
+/*Sección Contacto*/
+#contacto {
+  background-image: url(../images/contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#contacto div.bg-black {
+  --bs-bg-opacity: 0.8;
+}
+#contacto div.bg-black .formulario form div .form-control {
+  border-radius: 0 !important;
+}
+#contacto div.bg-black .formulario form div .form-control:focus {
+  border: 2px solid #1ee984 !important;
+}
+#contacto div.bg-black .formulario form div button.btn-primary {
+  border-radius: 0;
+  background-color: #1ee984;
+  border: 2px solid #040414;
+  color: #040414;
+}
+#contacto div.bg-black .formulario form div button.btn-primary:hover {
+  border-radius: 0;
+  background-color: #040414;
+  border: 2px solid #040414;
+  color: #1ee984;
+}
+
+/*Página sobre mi*/
+section#sobre_mi div.row div.PerfilRed div.FotoPerfil img {
+  width: 50%;
+}
+section#sobre_mi div.row div.PerfilRed ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+section#sobre_mi div.row div.PerfilRed ul li a {
+  text-decoration: none;
+  color: #040414;
+  font-size: 2.5em;
+}
+section#sobre_mi div.row div.PerfilRed ul li a:hover {
+  text-decoration: none;
+  color: #1ee984;
+}
+section#sobre_mi div.row div.competencias {
+  margin: 30px 0;
+}
+section#sobre_mi div.row div.competencias div.competencia_imagen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+section#sobre_mi div.row div.competencias div.competencia_imagen img {
+  width: 90%;
+}
+
+/*Página detalles*/
+section#detalle div.row div.detalle_parrafo ul {
+  list-style: none;
+  padding-left: 0;
+}
+section#detalle div.row div.detalle_parrafo ul li a span.text-bg-primary {
+  background-color: #040414 !important;
+}
+section#detalle div.row div.detalle_parrafo ul li a:hover span.text-bg-primary {
+  background-color: #1ee984 !important;
+}
+section#detalle div.row div.detalle_parrafo .ver-mas a.btn-primary {
+  border-radius: 0;
+  background-color: #1ee984;
+  border: 2px solid #040414;
+  color: #040414;
+  margin: 20px 0;
+}
+section#detalle div.row div.detalle_parrafo .ver-mas a.btn-primary:hover {
+  border-radius: 0;
+  background-color: #040414;
+  border: 2px solid #040414;
+  color: #1ee984;
+}
+
+/*footer*/
+footer {
+  background-color: #040414;
+}
+footer div.logo {
+  padding: 15px;
+}
+@media screen and (max-width: 576px) {
+  footer div.logo div.logo_footer {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer div.logo div.logo_footer {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: initial;
+    align-items: center;
+  }
+}
+footer div.logo div.redes ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+footer div.logo div.redes ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5em;
+}
+footer div.logo div.redes ul li a:hover {
+  text-decoration: none;
+  color: #1ee984;
+}
+footer div.copyright p {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+/*Página detalles*/
+section#detalle{
+    div.row{
+        div.detalle_parrafo{
+            ul{
+                list-style: none;
+                padding-left: 0;
+                li{
+                    a{
+                        span.text-bg-primary{
+                            background-color: $colorPrimario !important;
+                        }
+                        &:hover span.text-bg-primary{
+                            background-color: $colorSecundario !important;
+                        }
+                    }
+                }
+            }
+            .ver-mas{
+                a.btn-primary{
+                    @include boton();
+                    margin: 20px 0;
+                        &:hover{
+                            @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                        }
+                    }
+            }
+        }
+    }
+}

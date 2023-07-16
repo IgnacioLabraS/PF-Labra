@@ -1,0 +1,31 @@
+header {
+    nav.navbar.bg-primary{
+        background-color: $colorPrimario !important;
+        div.containerfluid{
+            .navbar-toggler{
+                .bi-list{
+                    @include mobile{
+                        color: $colorSecundario ;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            div.collapse.navbar-collapse{
+                ul.navbar-nav{
+                    li.nav-item {
+                        padding: 0 30px;
+                        a.nav-link{
+                            color: white!important;
+                            border-bottom: 3px solid $colorPrimario;
+                            &:hover{
+                                color: #1ee984;
+                                border-bottom: 3px solid $colorSecundario;
+                            }   
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

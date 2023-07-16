@@ -1,0 +1,19 @@
+@mixin BackImagen($size :cover, $repeat: no-repeat, $attachment:fixed, $overflow: hidden) {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+@mixin flexbox($direccion,$wrap,$justify,$align){
+    display: flex;
+    flex-direction: $direccion ;
+    flex-wrap: $wrap ;
+    justify-content: $justify ;
+    align-items: $align ;
+}
+@mixin boton($borderR: 0,$BackColor:$colorSecundario,$borde:2px solid $colorPrimario,$color:$colorPrimario){
+    border-radius: $borderR;
+    background-color: $BackColor;
+    border: $borde;
+    color : $color;
+}

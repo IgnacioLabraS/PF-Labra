@@ -1,0 +1,13 @@
+/*reset y cambios globales*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h2, h3, h4,h5 {
+    font-family: $fontTitulo;
+    font-weight: $weightTitulos;
+}
+p , span{
+    font-family: $fontParrafo;
+    line-height: $parrafoheigh;
+}

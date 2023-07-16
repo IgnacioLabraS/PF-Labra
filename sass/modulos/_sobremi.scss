@@ -1,0 +1,29 @@
+/*Sección sobre mi*/
+#sobre_mi{
+    .row{
+        .skills{
+            .progress{
+                --bs-progress-height: 3rem;
+                --bs-progress-bar-bg: #1ee984;
+                border: 2px solid $colorPrimario;
+                border-radius: 0;
+                .progress-bar{
+                    span{
+                        color:$colorPrimario;
+                        font-weight: $weightTitulos;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+        }
+        div{
+            a.btn-primary{
+                @include boton();
+                    &:hover{
+                        @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                    }
+                }
+        }
+    }
+}
