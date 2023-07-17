@@ -11,13 +11,11 @@ section#sobre_mi{
                         content: "“" ;
                         padding: 5px;
                         color: $colorSecundario;
-                        font-weight: 300;
                     }
                     &::after{
                     content: "”";
                     padding: 5px;
                     color: $colorSecundario;
-                    font-weight: 300;  
                     }
                 }
             }

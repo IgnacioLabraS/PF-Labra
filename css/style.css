@@ -269,13 +269,11 @@ section#sobre_mi div.row div.parrafo p q::before {
   content: "“";
   padding: 5px;
   color: #1ee984;
-  font-weight: 300;
 }
 section#sobre_mi div.row div.parrafo p q::after {
   content: "”";
   padding: 5px;
   color: #1ee984;
-  font-weight: 300;
 }
 section#sobre_mi div.row div.PerfilRed div.FotoPerfil img {
   width: 50%;
