@@ -11,3 +11,19 @@ p , span{
     font-family: $fontParrafo;
     line-height: $parrafoheigh;
 }
+div.row{
+    h2{ 
+         &::before{
+            content: "{";
+            padding: 5px;
+            color: $colorSecundario;
+            font-weight: 300;
+        }
+        &::after{
+        content: "}";
+        padding: 5px;
+        color: $colorSecundario;
+        font-weight: 300;  
+        }
+    }
+}

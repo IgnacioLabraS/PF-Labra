@@ -5,20 +5,22 @@
     .bg-black{
         --bs-bg-opacity: 0.7;
         img{
-            width: 30%;
+            width: 25%;
             @include mobile{
                 width: 60%;
+                }
             }
-        }
-        h1{
-            font-family: $fontTitulo;
-            font-size: 3rem;
-            @include mobile{
+        div{
+            h1{
+                font-family: $fontTitulo;
+                font-size: 3rem;
+                @include mobile{
                 font-size: 2rem;
+                }
             }
-        }
-        p{
+            p{
             font-family: $fontParrafo;
+            }
         }
     }
 }

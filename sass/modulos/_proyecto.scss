@@ -21,10 +21,15 @@ Section#proyecto{
                     overflow: hidden;
                     transition: .6s ease;
                     @include flexbox(column, nowrap,space-evenly, center);
+                    h3{
+                        font-size: 1.5rem;
+                    }
                     a.btn-primary{
                     @include boton();
+                    transition: all 1s ease-in-out ;
                         &:hover{
                             @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                            transform: scale(1.1);
                         }
                     }
                 }
@@ -36,8 +41,10 @@ Section#proyecto{
         div{
             a.btn-primary{
                 @include boton();
+                transition: all 1s ease-in-out ;
                     &:hover{
                         @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                        transform: scale(1.1);
                     }
                 }
         }

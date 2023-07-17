@@ -20,8 +20,10 @@ section#detalle{
                 a.btn-primary{
                     @include boton();
                     margin: 20px 0;
+                    transition: all 1s ease-in-out ;
                         &:hover{
                             @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                            transform: scale(1.1);
                         }
                     }
             }

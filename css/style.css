@@ -18,6 +18,19 @@ p, span {
   line-height: 1.5;
 }
 
+div.row h2::before {
+  content: "{";
+  padding: 5px;
+  color: #1ee984;
+  font-weight: 300;
+}
+div.row h2::after {
+  content: "}";
+  padding: 5px;
+  color: #1ee984;
+  font-weight: 300;
+}
+
 /*Cambio bootstrap*/
 .navbar-nav .nav-item {
   padding: 0 30px;
@@ -45,6 +58,7 @@ p, span {
 .navbar-nav .nav-item a.nav-link {
   color: white !important;
   border-bottom: 3px solid #040414;
+  transition: all 0.6s ease-in-out;
 }
 .navbar-nav .nav-item a.nav-link:hover {
   color: #1ee984 !important;
@@ -97,23 +111,23 @@ header nav.navbar.bg-primary div.containerfluid div.collapse.navbar-collapse ul.
   --bs-bg-opacity: 0.7;
 }
 #presentacion .bg-black img {
-  width: 30%;
+  width: 25%;
 }
 @media screen and (max-width: 576px) {
   #presentacion .bg-black img {
     width: 60%;
   }
 }
-#presentacion .bg-black h1 {
+#presentacion .bg-black div h1 {
   font-family: "Kanit", sans-serif;
   font-size: 3rem;
 }
 @media screen and (max-width: 576px) {
-  #presentacion .bg-black h1 {
+  #presentacion .bg-black div h1 {
     font-size: 2rem;
   }
 }
-#presentacion .bg-black p {
+#presentacion .bg-black div p {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -147,17 +161,22 @@ Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen div.overlay {
   justify-content: space-evenly;
   align-items: center;
 }
+Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen div.overlay h3 {
+  font-size: 1.5rem;
+}
 Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen div.overlay a.btn-primary {
   border-radius: 0;
   background-color: #1ee984;
   border: 2px solid #040414;
   color: #040414;
+  transition: all 1s ease-in-out;
 }
 Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen div.overlay a.btn-primary:hover {
   border-radius: 0;
   background-color: #040414;
   border: 2px solid #040414;
   color: #1ee984;
+  transform: scale(1.1);
 }
 Section#proyecto div.row div.ProyectoCarta div.proyecto_imagen:hover .overlay {
   height: 100%;
@@ -167,12 +186,14 @@ Section#proyecto div.row div a.btn-primary {
   background-color: #1ee984;
   border: 2px solid #040414;
   color: #040414;
+  transition: all 1s ease-in-out;
 }
 Section#proyecto div.row div a.btn-primary:hover {
   border-radius: 0;
   background-color: #040414;
   border: 2px solid #040414;
   color: #1ee984;
+  transform: scale(1.1);
 }
 
 /*Sección sobre mi*/
@@ -192,12 +213,14 @@ Section#proyecto div.row div a.btn-primary:hover {
   background-color: #1ee984;
   border: 2px solid #040414;
   color: #040414;
+  transition: all 1s ease-in-out;
 }
 #sobre_mi .row div a.btn-primary:hover {
   border-radius: 0;
   background-color: #040414;
   border: 2px solid #040414;
   color: #1ee984;
+  transform: scale(1.1);
 }
 
 /*Sección Contacto*/
@@ -218,6 +241,7 @@ Section#proyecto div.row div a.btn-primary:hover {
   border: 2px solid #1ee984 !important;
 }
 #contacto div.bg-black .formulario form div button.btn-primary {
+  transition: all 1s ease-in-out;
   border-radius: 0;
   background-color: #1ee984;
   border: 2px solid #040414;
@@ -228,6 +252,7 @@ Section#proyecto div.row div a.btn-primary:hover {
   background-color: #040414;
   border: 2px solid #040414;
   color: #1ee984;
+  transform: scale(1.1);
 }
 
 /*Página sobre mi*/
@@ -242,10 +267,12 @@ section#sobre_mi div.row div.PerfilRed ul li a {
   text-decoration: none;
   color: #040414;
   font-size: 2.5em;
+  transition: all 1s ease-in-out;
 }
 section#sobre_mi div.row div.PerfilRed ul li a:hover {
   text-decoration: none;
   color: #1ee984;
+  transform: scale(1.1);
 }
 section#sobre_mi div.row div.competencias {
   margin: 30px 0;
@@ -259,6 +286,10 @@ section#sobre_mi div.row div.competencias div.competencia_imagen {
 }
 section#sobre_mi div.row div.competencias div.competencia_imagen img {
   width: 90%;
+  transition: all 1s ease-in-out;
+}
+section#sobre_mi div.row div.competencias div.competencia_imagen img:hover {
+  transform: scale(1.1);
 }
 
 /*Página detalles*/
@@ -278,12 +309,14 @@ section#detalle div.row div.detalle_parrafo .ver-mas a.btn-primary {
   border: 2px solid #040414;
   color: #040414;
   margin: 20px 0;
+  transition: all 1s ease-in-out;
 }
 section#detalle div.row div.detalle_parrafo .ver-mas a.btn-primary:hover {
   border-radius: 0;
   background-color: #040414;
   border: 2px solid #040414;
   color: #1ee984;
+  transform: scale(1.1);
 }
 
 /*footer*/
@@ -321,10 +354,12 @@ footer div.logo div.redes ul li a {
   text-decoration: none;
   color: white;
   font-size: 2.5em;
+  transition: all 1s ease-in-out;
 }
 footer div.logo div.redes ul li a:hover {
   text-decoration: none;
   color: #1ee984;
+  transform: scale(1.1);
 }
 footer div.copyright p {
   margin-bottom: 0;

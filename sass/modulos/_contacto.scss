@@ -16,9 +16,11 @@
                 }
                 div{
                     button.btn-primary{
+                        transition: all 1s ease-in-out ;
                         @include boton();
                             &:hover{
                                 @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
+                                transform: scale(1.1);
                             }
                         }
                 }
