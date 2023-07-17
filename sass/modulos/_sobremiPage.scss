@@ -1,6 +1,27 @@
 /*Página sobre mi*/
 section#sobre_mi{
     div.row{
+        div.parrafo{
+            p{
+                q{
+                    font-style: italic; 
+                    padding: 30px;
+                    font-size: 1.4rem;
+                    &::before{
+                        content: "“" ;
+                        padding: 5px;
+                        color: $colorSecundario;
+                        font-weight: 300;
+                    }
+                    &::after{
+                    content: "”";
+                    padding: 5px;
+                    color: $colorSecundario;
+                    font-weight: 300;  
+                    }
+                }
+            }
+        }
         div.PerfilRed{
             div.FotoPerfil{
                 img{
@@ -15,7 +36,7 @@ section#sobre_mi{
                         text-decoration: none;
                         color: $colorPrimario;
                         font-size: 2.5em;
-                        transition: all 1s ease-in-out ;
+                        transition: all .6s ease-in-out ;
                         &:hover{
                             text-decoration: none;
                             color: $colorSecundario;
@@ -38,6 +59,9 @@ section#sobre_mi{
                         transform: scale(1.1);
                     }
                 }
+            }
+            p{
+                padding: 10px 50px
             }
         }
     }

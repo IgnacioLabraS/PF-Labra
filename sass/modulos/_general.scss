@@ -3,27 +3,23 @@
     margin: 0;
     padding: 0;
 }
-h2, h3, h4,h5 {
+h1, h2, h3, h4, h5 {
     font-family: $fontTitulo;
     font-weight: $weightTitulos;
+    &::before{
+        content: "{";
+        padding: 5px;
+        color: $colorSecundario;
+        font-weight: 300;
+    }
+    &::after{
+    content: "}";
+    padding: 5px;
+    color: $colorSecundario;
+    font-weight: 300;  
+    }
 }
 p , span{
     font-family: $fontParrafo;
     line-height: $parrafoheigh;
-}
-div.row{
-    h2{ 
-         &::before{
-            content: "{";
-            padding: 5px;
-            color: $colorSecundario;
-            font-weight: 300;
-        }
-        &::after{
-        content: "}";
-        padding: 5px;
-        color: $colorSecundario;
-        font-weight: 300;  
-        }
-    }
 }

@@ -9,9 +9,11 @@ section#detalle{
                     a{
                         span.text-bg-primary{
                             background-color: $colorPrimario !important;
+                            transition: all .6s ease-in-out ;
                         }
                         &:hover span.text-bg-primary{
                             background-color: $colorSecundario !important;
+                            transform: scale(1.1);
                         }
                     }
                 }
@@ -20,7 +22,7 @@ section#detalle{
                 a.btn-primary{
                     @include boton();
                     margin: 20px 0;
-                    transition: all 1s ease-in-out ;
+                    transition: all .6s ease-in-out ;
                         &:hover{
                             @include boton(0 ,$colorPrimario,2px solid $colorPrimario,$colorSecundario);
                             transform: scale(1.1);
