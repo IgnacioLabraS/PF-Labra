@@ -4,13 +4,24 @@ footer{
     div.logo{
         padding: 15px;
         div.logo_footer{
+            a{
+                img{
+                    width: 75%;
+                    padding: 0 35px;
+                    filter: grayscale(100%);
+                    transition: all .6s ease-in-out ;
+                    &:hover{
+                        filter: none;
+                    }
+                }
+            }
             @include mobile{
                 padding: 20px 0px;
                 @include flexbox(row,nowrap,center,center);
             }
             @include tablet{
                 padding: 20px 0px;
-                @include flexbox(row,nowrap,initial,center);
+                @include flexbox(row,nowrap,center,center);
             }
         }
         div.redes{
@@ -22,11 +33,10 @@ footer{
                         text-decoration: none;
                         color:white;
                         font-size: 2.5em;
-                        transition: all .6s ease-in-out ;
+                        transition: all .8s ease-in-out ;
                         &:hover{
                             text-decoration: none;
                             color:$colorSecundario;
-                            transform: scale(1.1);
                         }
                     }
                 }

@@ -24,21 +24,31 @@ section#sobre_mi{
             div.FotoPerfil{
                 img{
                     width: 50%;
+                    border-radius: 5000px;
+                    filter: grayscale(100%);
+                    transition: all .6s ease-in-out ;
+                    margin: 20px 0;
+                    &:hover{
+                    filter: none;
+                    transform: scale(1.2);
+                    border: 5px solid $colorSecundario;
+                    }
                 }
             }
             ul{
                 list-style: none;
                 margin-bottom: 0;
                 li{
+                    padding: 20px;
                     a{
                         text-decoration: none;
                         color: $colorPrimario;
-                        font-size: 2.5em;
+                        font-size: 2.5rem;
                         transition: all .6s ease-in-out ;
                         &:hover{
+                            overflow: hidden;
                             text-decoration: none;
                             color: $colorSecundario;
-                            transform: scale(1.1);
                         }
                     }
                 }
@@ -52,7 +62,9 @@ section#sobre_mi{
                 @include flexbox(row,nowrap,center,center);
                 img{
                     width: 90%;
-                    transition: all 1s ease-in-out ;
+                    border-radius: 5000px;
+                    transition: all .6s ease-in-out ;
+                    border: 5px solid $colorSecundario;
                     &:hover { 
                         transform: scale(1.1);
                     }

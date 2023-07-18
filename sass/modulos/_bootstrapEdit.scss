@@ -1,26 +1,4 @@
 /*Cambio bootstrap*/
-.navbar-nav{
-    .nav-item {
-        padding: 0 30px;
-        @include mobile{
-                padding: 15px 20px;
-                @include flexbox(row,nowrap,center,center);
-        }
-        @include tablet{
-            padding: 15px 20px;
-            @include flexbox(row,nowrap,center,center);
-    }
-        a.nav-link{
-            color: white!important;
-            border-bottom: 3px solid $colorPrimario;
-            transition: all .6s ease-in-out ;
-            &:hover{
-                color: $colorSecundario !important;
-                border-bottom: 3px solid $colorSecundario;
-            }   
-        }
-    }
-}
 .bi-list{
     @include mobile{
         color: $colorSecundario ;
