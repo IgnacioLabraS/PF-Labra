@@ -1,6 +1,7 @@
 /*Sección presentación*/
 #presentacion{
-    background-image: url(../images/presentacion.jpg);
+    padding-top: 80px;
+    background-image: url(../images/presentacion.webp);
     @include BackImagen();
     .bg-black{
         --bs-bg-opacity: 0.7;

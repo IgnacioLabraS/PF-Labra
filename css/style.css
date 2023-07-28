@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -44,6 +48,9 @@ p, span {
   }
 }
 
+header {
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
 header nav.navbar.bg-primary {
   background-color: #040414 !important;
 }
@@ -91,7 +98,8 @@ header nav.navbar.bg-primary div.container-fluid .navbar-nav .nav-item a.nav-lin
 
 /*Sección presentación*/
 #presentacion {
-  background-image: url(../images/presentacion.jpg);
+  padding-top: 80px;
+  background-image: url(../images/presentacion.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -192,6 +200,9 @@ Section#proyecto div.row div a.btn-primary:hover {
 }
 
 /*Sección sobre mi*/
+#sobre_mi .row .skills {
+  padding: 20px;
+}
 #sobre_mi .row .skills .progress {
   --bs-progress-height: 3rem;
   --bs-progress-bar-bg: #1ee984;
@@ -220,7 +231,7 @@ Section#proyecto div.row div a.btn-primary:hover {
 
 /*Sección Contacto*/
 #contacto {
-  background-image: url(../images/contacto.jpg);
+  background-image: url(../images/contacto.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -251,6 +262,9 @@ Section#proyecto div.row div a.btn-primary:hover {
 }
 
 /*Página sobre mi*/
+section#sobre_mi div.row div.parrafo p {
+  padding: 20px;
+}
 section#sobre_mi div.row div.parrafo p q {
   font-style: italic;
   padding: 30px;
